@@ -4,7 +4,7 @@ import:
   - display/client
   - display/tags
   - display/status/notice
-  - display/status/music/mpd
+  #- display/status/music/mpd
   - display/status/volume
   #- display/status/network
   #- display/status/disk
