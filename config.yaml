@@ -14,23 +14,23 @@ import:
   - display/status/time
   - display/status/arrange
   - control/mouse
-  - control/keyboard/dvorak
-  - control/keyboard/dvorak/arrange_by_number
-  - control/keyboard/dvorak/client
-  - control/keyboard/dvorak/detach
-  - control/keyboard/dvorak/focus_by_letter
-  - control/keyboard/dvorak/focus_by_number
-  - control/keyboard/dvorak/focus
-  - control/keyboard/dvorak/group
-  - control/keyboard/dvorak/launch
-  - control/keyboard/dvorak/layout_by_number
-  - control/keyboard/dvorak/layout
-  - control/keyboard/dvorak/menu
-  - control/keyboard/dvorak/move_by_number
-  - control/keyboard/dvorak/move
-  - control/keyboard/dvorak/swap_by_number
-  - control/keyboard/dvorak/swap
-  - control/keyboard/dvorak/zoom
+  - control/keyboard/qwerty
+  - control/keyboard/qwerty/arrange_by_number
+  - control/keyboard/qwerty/client
+  - control/keyboard/qwerty/detach
+  - control/keyboard/qwerty/focus_by_letter
+  - control/keyboard/qwerty/focus_by_number
+  - control/keyboard/qwerty/focus
+  - control/keyboard/qwerty/group
+  - control/keyboard/qwerty/launch
+  - control/keyboard/qwerty/layout_by_number
+  - control/keyboard/qwerty/layout
+  - control/keyboard/qwerty/menu
+  - control/keyboard/qwerty/move_by_number
+  - control/keyboard/qwerty/move
+  - control/keyboard/qwerty/swap_by_number
+  - control/keyboard/qwerty/swap
+  - control/keyboard/qwerty/zoom
 
 prefer:
   terminal: urxvt
@@ -120,7 +120,7 @@ control:
 
     laptop: | # undock laptop from my desk
       system 'xrandr --output LVDS1 --auto --output HDMI1 --off --output VGA1 --off --dpi 96'
-      system 'setxkbmap dvorak -option ""'
+      system 'setxkbmap qwerty -option ""'
       action 'reload' # reposition witray & update shortcuts to new xkbmap
 
     projector: | # display through a projector
