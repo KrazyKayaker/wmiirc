@@ -1,5 +1,7 @@
-#!/usr/bin/env ruby
+#!/usr/bin/env bash
 
-$LOAD_PATH.unshift File.expand_path('../lib', __FILE__)
-require 'wmiirc/loader'
-Wmiirc::Loader.run
+. ~/.rvm/scripts/rvm
+
+rvm use 1.9.2 || exit 1
+
+exec ~/.wmii-hg/wmiirc.rb
