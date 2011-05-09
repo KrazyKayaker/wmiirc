@@ -14,7 +14,7 @@ import:
   - display/status/time
   - display/status/arrange
   - control/mouse
-  - control/keyboard/qwerty
+  - control/keyboard/qwerty_mod4
   - control/keyboard/qwerty/arrange_by_number
   - control/keyboard/qwerty/client
   - control/keyboard/qwerty/detach
@@ -98,9 +98,7 @@ script:
       launch 'witray'
 
       {
-        'claws-mail' => 'mail',
-        'liferea'    => 'news',
-        'chromium'   => 'www',
+        'xeyes'   => 'www',
       }.
       each do |app, tag|
         launch "pgrep #{app} || wihack -tags #{tag} #{app}"
